@@ -13,9 +13,11 @@ Instead of using JAVAFX, I would use HTML, CSS, JavaScript and MongoDB.
 Finally, I would code some of the extra features that I intended to implement such as automatic backup. Unfortunately, the time constraints and unforseen circumstances led to me leaving those extra features out and just going for the main system.
 
 ## Running the Program:
-In order to run the program, please import the global libraries for the latest version of MYSQL driver and JAVAFX into your IDE. Edit the DatabaseConnection class to your liking in terms of the name of the database, username and the password.
+In order to run the program, setup the project sdk, ensure that your IDE has identified the src folder and out folder (manually make a folder called out at the root). Install MYSQL and ensure a server is running in the background. please import the global libraries for the latest version of MYSQL J connector and JAVAFX into your IDE. Edit the DatabaseConnection class to your liking in terms of the name of the database, username and the password.
 
-Manually insert the BackupOfDatabase.txt file into your database SQL client and push the data into the database.
+Manually insert the BackupOfDatabase.txt file into your database SQL client and push the data into the database. Without doing this you will be stuck on the login page!
+
+Rebuild the project in your IDE.
 
 The project should then run.
 
