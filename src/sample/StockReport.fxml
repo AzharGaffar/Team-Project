@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StockTurnoverReportController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Turnover" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="90.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="namePlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="NamePlaceHolder" wrappingWidth="192.994140625" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="65.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Number:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Role:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="staffNumberPlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="SNPlaceHolder" wrappingWidth="198.712890625" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="95.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="rolePlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="System Administrator" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="70.0" top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <TableView fx:id="StockTurnoverTable3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="346.0" GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+         <columns>
+            <TableColumn prefWidth="75.0" text="Unused Blanks">
+               <columns>
+                  <TableColumn fx:id="unused444Column" prefWidth="75.0" text="Unused 444" />
+                  <TableColumn fx:id="unused420Column" prefWidth="75.0" text="Unused 420" />
+                  <TableColumn fx:id="unused201Column" prefWidth="75.0" text="Unused 201" />
+                  <TableColumn fx:id="unused101Column" prefWidth="75.0" text="Unused 101" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Back" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Print" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Print" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="10.0" />
+         </GridPane.margin>
+      </Button>
+      <TableView fx:id="StockTurnoverTable1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="374.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columns>
+            <TableColumn prefWidth="815.0" text="Received Blanks">
+               <columns>
+                  <TableColumn fx:id="received444Column" prefWidth="96.0" text="Received 444" />
+                  <TableColumn fx:id="received420Column" prefWidth="95.0" text="Received 420" />
+                  <TableColumn fx:id="received201Column" prefWidth="90.0" text="Recieved 201" />
+                  <TableColumn fx:id="received101Column" prefWidth="90.0" text="Received 101" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <TableView fx:id="StockTurnoverTable2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="407.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+         <columns>
+            <TableColumn fx:id="advisorCodeColumn" prefWidth="104.0" text="Advisor Code" />
+            <TableColumn prefWidth="280.0" text="Used Blanks">
+               <columns>
+                  <TableColumn fx:id="used444Column" prefWidth="75.0" text="Used 444" />
+                  <TableColumn fx:id="used420Column" prefWidth="75.0" text="Used 420" />
+                  <TableColumn fx:id="used201Column" prefWidth="75.0" text="Used 201" />
+                  <TableColumn fx:id="used101Column" prefWidth="75.0" text="Used 101" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</GridPane>

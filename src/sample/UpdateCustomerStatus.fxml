@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateCustomerStatusController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer Status" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="90.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="namePlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="NamePlaceHolder" wrappingWidth="192.994140625" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="65.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Number:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Role:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="staffNumberPlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="SNPlaceHolder" wrappingWidth="198.712890625" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="95.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="rolePlaceholder" strokeType="OUTSIDE" strokeWidth="0.0" text="System Administrator" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="70.0" top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <TableView fx:id="CustomerStatusTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="866.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <columns>
+          <TableColumn fx:id="customerIDColumn" prefWidth="109.0" text="CustomerID" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="155.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="136.0" text="Last Name" />
+            <TableColumn fx:id="aliasColumn" prefWidth="149.0" text="Alias" />
+            <TableColumn fx:id="statusColumn" prefWidth="125.0" text="Status" />
+            <TableColumn fx:id="discountColumn" prefWidth="159.0" text="Fixed Discount Percentage" />
+        </columns>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+      </TableView>
+      <Button fx:id="upgradeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Upgrade" prefHeight="31.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Upgrade To Valued" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets top="40.0" />
+         </GridPane.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Downgrade" prefHeight="31.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Downgrade Customer Status" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets top="40.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="searchBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="205.0" promptText="Search by Customer Alias" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </TextField>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Back" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#Search" text="Search" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#filterValued" prefHeight="31.0" prefWidth="149.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Filter by Valued" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#filterNotValued" prefHeight="31.0" prefWidth="149.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Filter by not Valued" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#resetButton" prefHeight="31.0" prefWidth="149.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Reset To Original View" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Regular" prefHeight="31.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-border-color: BLACK; -fx-border-radius: 15; -fx-border-width: 2;" text="Upgrade To Regular" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets top="40.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

@@ -1,0 +1,11 @@
+         Received444          Received420          Received201          Received101
+                 100                  100                  100                   50
+
+              TACode              Used444              Used420              Used201              Used101
+                 211                    2                    0                    1                    0  
+                 250                    4                    0                    2                    0  
+
+           Unused444            Unused420              Used201              Used101
+                  60                   50                   75                    0 
+                  18                   20                   14                   50 
+                  16                   30                    8                    0 

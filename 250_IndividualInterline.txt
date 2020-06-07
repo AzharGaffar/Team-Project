@@ -1,0 +1,15 @@
+              Number         Blank_Number             Fare_USD       ConversionRate           Fare_Local             LocalTax             OtherTax          TotalAmount          Cash_Amount            CC_Number            TotalPaid           Commission 
+                   1          44400000001    407.4074074074074                 0.54                220.0                 23.0                 35.0                278.0                278.0                 null                278.0                 19.8 
+                   2          44400000002    425.9259259259259                 0.54                230.0                 43.0                 55.0                328.0                 null VISA 4901 0002 2345 3456                328.0                 20.7 
+                   3          44400000003    511.6279069767442                 0.43                220.0                 63.0                 75.0                358.0                358.0                 null                358.0                 19.8 
+                   4          44400000004    534.8837209302326                 0.43                230.0                 23.0                 35.0                288.0                288.0                 null                288.0                 20.7 
+Counted Number: 4
+Total USD Fare: 1879.845
+Total Local Fare: 900.0
+Total Tax Local: 152.0
+Total Tax Other: 200.0
+Total Amount: 1252.0
+Total Cash: 924.0
+Total Paid: 1252.0
+Total Commission: 81.0
+Net Amount: 1171.0
