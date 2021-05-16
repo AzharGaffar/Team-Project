@@ -25,11 +25,11 @@ Finally, I would code some of the extra features that I intended to implement su
 * Rebuild the Project.
 * Run
 
-A list of logins for the system in Username | Password form are as follows...
-
+A list of logins that were required to be pushed into the system as stated by the module handbook are shown below in Username | Password form:
 * Root | Root
 * Dennis | Gnasher
 * Minnie | NotiGirl
 * Penelope | PinkMobile
 * Arthur | LiesaLot
+
 * You can make your own logins as well as long as you login as Root (or any other account that has System Administrator privileges).
