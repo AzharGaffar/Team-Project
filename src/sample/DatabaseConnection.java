@@ -20,7 +20,7 @@ public class DatabaseConnection {
             System.out.println("Connection Established!");
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Connection not Established!, Please check over source code! Specifically the Username and Password in the DatabaseConnection.java");
+            System.out.println("Connection not Established!, Please check over source code! Specifically the dbName, Username and Password in the DatabaseConnection.java");
         }
 
 
