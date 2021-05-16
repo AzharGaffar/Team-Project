@@ -21,7 +21,7 @@ Finally, I would code some of the extra features that I intended to implement su
 * Go to File -> Project Structure -> Libraries and add all the JavaFX .jar dependencies that you will find in the "lib" folder of the unzipped JavaFX SDK.
 * Do the same for the J connector .jar file.
 * Edit the dbName, username and password variables in the DatabaseConnection.java file so the program will be linked to your local (**running**) database.
-* Go to the Main.java file and press the "Add Configuration" button. Press the "+" button and select "Application". Identify "Main" as the main method and press the "Apply" button.
+* Go to the Main.java file and press the "Add Configuration" button. Press the "+" button and select "Application". Identify "sample.Main" as the main class and press the "Apply" button.
 * Rebuild the Project.
 * Run
 
